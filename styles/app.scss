@@ -17,6 +17,7 @@ header {
     float: left;
     font-weight: bold;
     font-size: 1.5em;
+    color: #fff;
   }
   list-style-type: none;
   text-align: right;
@@ -54,4 +55,21 @@ section {
   &.four {
     background: #A43562;
   }
+}
+
+#picture {
+  position: relative;
+  height: 100%;
+  margin: -0.8em -1em;
+  img {
+    height: auto;
+    width: 50%;
+  }
+}
+
+#about-text {
+  position: absolute;
+  top: 50px;
+  right: 30px;
+  width: 500px;
 }

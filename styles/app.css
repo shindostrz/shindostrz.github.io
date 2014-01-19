@@ -19,7 +19,8 @@ header {
   .main-navigation span {
     float: left;
     font-weight: bold;
-    font-size: 1.5em; }
+    font-size: 1.5em;
+    color: #fff; }
   .main-navigation li {
     display: inline-block; }
     .main-navigation li a {
@@ -45,3 +46,17 @@ section {
     background: #316671; }
   section.four {
     background: #A43562; }
+
+#picture {
+  position: relative;
+  height: 100%;
+  margin: -0.8em -1em; }
+  #picture img {
+    height: auto;
+    width: 50%; }
+
+#about-text {
+  position: absolute;
+  top: 50px;
+  right: 30px;
+  width: 500px; }
