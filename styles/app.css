@@ -62,7 +62,7 @@ section {
   #about-content p {
     text-align: left; }
 
-@media (max-width: 650px) {
+@media screen and (max-width: 650px) {
   #about-content img {
     width: 100%;
     border-radius: 0;
