@@ -3,7 +3,6 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
   font-family: 'Actor', sans-serif; }
 
 header {
@@ -13,6 +12,7 @@ header {
   z-index: 99; }
 
 .main-navigation span {
+  margin-top: -5px;
   float: left;
   font-weight: bold;
   font-size: 1.5em;
@@ -78,11 +78,12 @@ section {
     min-height: 40px; }
 
   .main-navigation ul {
-    width: 180px;
-    padding: 5px 0;
+    margin: 5px;
+    width: 30px;
+    padding: 6px 1px;
     position: absolute;
-    top: 0;
-    left: 0;
+    left: auto;
+    right: 0;
     border: solid 1px #aaa;
     background: white url(http://webdesignerwall.com/demo/responsive-menu/images/icon-menu.png) no-repeat 10px 11px;
     border-radius: 5px; }
@@ -93,18 +94,14 @@ section {
     margin: 0; }
 
   .main-navigation a {
-    display: block;
-    padding: 5px 5px 5px 32px;
-    text-align: left; }
+    display: none; }
 
   .main-navigation ul:hover {
-    background-image: none; }
+    background-image: none;
+    width: 180px; }
+    .main-navigation ul:hover a {
+      display: block; }
 
   .main-navigation ul:hover li {
     display: block;
-    margin: 0 0 5px; }
-
-  /* right main-navigation */
-  .main-navigation ul {
-    left: auto;
-    right: 0; } }
+    margin: 0 0 5px; } }
