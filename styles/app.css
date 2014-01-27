@@ -71,37 +71,36 @@ section {
 
   section {
     margin: 0;
-    padding: 0; }
+    padding: 40px 0px; }
+    section.one h1 {
+      display: none; }
 
   .main-navigation {
     position: relative;
     min-height: 40px; }
-
-  .main-navigation ul {
-    margin: 5px;
-    width: 30px;
-    padding: 6px 1px;
-    position: absolute;
-    left: auto;
-    right: 0;
-    border: solid 1px #aaa;
-    background: white url(http://webdesignerwall.com/demo/responsive-menu/images/icon-menu.png) no-repeat 10px 11px;
-    border-radius: 5px; }
-
-  .main-navigation li {
-    display: none;
-    /* hide all <li> items */
-    margin: 0; }
-
-  .main-navigation a {
-    display: none; }
-
-  .main-navigation ul:hover {
-    background-image: none;
-    width: 180px; }
-    .main-navigation ul:hover a {
-      display: block; }
-
-  .main-navigation ul:hover li {
-    display: block;
-    margin: 0 0 5px; } }
+    .main-navigation span {
+      margin-top: 5px; }
+    .main-navigation ul {
+      margin: 4px;
+      width: 30px;
+      padding: 5px 1px 6px;
+      position: absolute;
+      left: auto;
+      right: 0;
+      border: solid 1px #aaa;
+      background: white url(http://webdesignerwall.com/demo/responsive-menu/images/icon-menu.png) no-repeat 10px 10px;
+      border-radius: 5px; }
+    .main-navigation li {
+      display: none;
+      /* hide all <li> items */
+      margin: 0; }
+    .main-navigation a {
+      display: none; }
+    .main-navigation ul:hover {
+      background-image: none;
+      width: 180px; }
+      .main-navigation ul:hover a {
+        display: block; }
+      .main-navigation ul:hover li {
+        display: block;
+        margin: 0 0 5px; } }
