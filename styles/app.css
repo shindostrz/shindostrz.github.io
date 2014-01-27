@@ -1,9 +1,10 @@
-@import url(http://fonts.googleapis.com/css?family=Merriweather+Sans);
+@import url(http://fonts.googleapis.com/css?family=Actor);
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: 'Merriweather Sans', sans-serif; }
+  overflow-x: hidden;
+  font-family: 'Actor', sans-serif; }
 
 header {
   position: fixed;
@@ -11,26 +12,26 @@ header {
   background: #424244;
   z-index: 99; }
 
-.main-navigation {
+.main-navigation span {
+  float: left;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #fff; }
+.main-navigation ul {
   list-style-type: none;
   text-align: right;
   padding: 0;
   margin: 0.8em 1em; }
-  .main-navigation span {
-    float: left;
-    font-weight: bold;
-    font-size: 1.5em;
-    color: #fff; }
-  .main-navigation li {
+  .main-navigation ul li {
     display: inline-block; }
-    .main-navigation li a {
+    .main-navigation ul li a {
       padding: 0.25em 0.5em;
       background: #B1A530;
       text-decoration: none;
       text-transform: uppercase;
       color: #fff;
       border-radius: 3px; }
-      .main-navigation li a:hover {
+      .main-navigation ul li a:hover {
         background: #9d922b; }
 
 section {
@@ -40,6 +41,10 @@ section {
   color: #fff; }
   section.one {
     background: #583B47; }
+    section.one h1 {
+      font-size: 45px;
+      text-align: center;
+      margin: 0; }
   section.two {
     background: #38D1F1; }
   section.three {
@@ -47,16 +52,59 @@ section {
   section.four {
     background: #A43562; }
 
-#picture {
-  position: relative;
-  height: 100%;
-  margin: -0.8em -1em; }
-  #picture img {
-    height: auto;
-    width: 50%; }
+#about-content {
+  text-align: center;
+  max-width: 800px;
+  margin: auto; }
+  #about-content img {
+    width: 75%;
+    border-radius: 15px; }
+  #about-content p {
+    text-align: left; }
 
-#about-text {
-  position: absolute;
-  top: 50px;
-  right: 30px;
-  width: 500px; }
+@media (max-width: 650px) {
+  #about-content img {
+    width: 100%;
+    border-radius: 0;
+    padding: 0;
+    margin: 0; }
+
+  section {
+    margin: 0;
+    padding: 0; }
+
+  .main-navigation {
+    position: relative;
+    min-height: 40px; }
+
+  .main-navigation ul {
+    width: 180px;
+    padding: 5px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: solid 1px #aaa;
+    background: white url(http://webdesignerwall.com/demo/responsive-menu/images/icon-menu.png) no-repeat 10px 11px;
+    border-radius: 5px; }
+
+  .main-navigation li {
+    display: none;
+    /* hide all <li> items */
+    margin: 0; }
+
+  .main-navigation a {
+    display: block;
+    padding: 5px 5px 5px 32px;
+    text-align: left; }
+
+  .main-navigation ul:hover {
+    background-image: none; }
+
+  .main-navigation ul:hover li {
+    display: block;
+    margin: 0 0 5px; }
+
+  /* right main-navigation */
+  .main-navigation ul {
+    left: auto;
+    right: 0; } }
