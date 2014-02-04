@@ -13,14 +13,18 @@ header {
   z-index: 99;
 }
 .main-navigation {
-  span {
-    margin-top: -5px;
+  #name {
     float: left;
     font-weight: bold;
     font-size: 1.5em;
     color: #fff;
+    margin-top: .4em
   }
-  ul {
+  #links {
+    float: right;
+    display: inline-flex;
+  }
+  #section-links {
     list-style-type: none;
     text-align: right;
     padding: 0;
@@ -38,6 +42,13 @@ header {
           background: darken(#B1A530, 5%);
         }
       }
+    }
+  }
+  #social-icons {
+    margin: .4em .4em 0 -3em;
+    list-style-type: none;
+    li {
+      display: inline-block;
     }
   }
 }
@@ -67,10 +78,10 @@ section {
 
 #about-content {
   text-align: center;
-  max-width: 800px;
+  max-width: 760px;
   margin: auto;
   img {
-    width: 75%;
+    width: 80%;
     border-radius: 15px;
   }
   p {
@@ -78,7 +89,38 @@ section {
   }
 }
 
-@media (max-width: 650px) {
+.two-column-container {
+  width: 80%;
+  max-width: 900px;
+  height: 800px;
+  margin: 0 auto;
+  .left-column {
+    float: left;
+  }
+  .right-column {
+    float: right;
+  }
+  div div {
+    width: 22em;
+    height: 22em;
+    background-color: black;
+    border-radius: 20px;
+    margin: 20px 20px
+  }
+}
+
+@media (max-width: 64em) {
+  .two-column-container {
+    width: 95%
+  }
+}
+
+@media (max-width: 46em) {
+  #social-icons {
+    display: none;
+  }
+}
+@media (max-width: 40em) {
   #about-content img {
     width: 100%;
     border-radius: 0;
@@ -100,8 +142,8 @@ section {
     span {
       margin-top: 5px;
     }
-    ul {
-      margin: 4px;
+    #section-links {
+      margin: 0 4px;
       width: 30px;
       padding: 5px 1px 6px;
       position: absolute;
@@ -118,7 +160,10 @@ section {
     a {
       display: none;
     }
-    ul:hover {
+    #social-icons {
+      display: none;
+    }
+    #section-links:hover {
       background-image: none;
       width: 180px;
       a {
