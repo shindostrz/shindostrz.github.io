@@ -82,9 +82,10 @@ section {
   .two-column-container div div {
     width: 22em;
     height: 22em;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.2);
     border-radius: 20px;
-    margin: 20px 20px; }
+    margin: 20px 20px;
+    padding: 10px 10px; }
 
 @media (max-width: 64em) {
   .two-column-container {
