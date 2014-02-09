@@ -1,0 +1,179 @@
+@import url(http://fonts.googleapis.com/css?family=Actor);
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Actor', sans-serif;
+}
+header {
+  position: fixed;
+  width: 100%;
+  background: #424244;
+  z-index: 99;
+}
+.main-navigation {
+  #name {
+    float: left;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #fff;
+    margin-top: .4em
+  }
+  #links {
+    float: right;
+    display: inline-flex;
+  }
+  #section-links {
+    list-style-type: none;
+    text-align: right;
+    padding: 0;
+    margin: 0.8em 1em;
+    li {
+      display: inline-block;
+      a {
+        padding: 0.25em 0.5em;
+        background: #B1A530;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #fff;
+        border-radius: 3px;
+        &:hover {
+          background: darken(#B1A530, 5%);
+        }
+      }
+    }
+  }
+  #social-icons {
+    margin: .4em .4em 0 -3em;
+    list-style-type: none;
+    li {
+      display: inline-block;
+    }
+  }
+}
+section {
+  min-height: 100%;
+  position: relative;
+  padding: 3em 1em 1em;
+  color: #fff;
+  &.one {
+    background: #583B47;
+    h1 {
+      font-size: 45px;
+      text-align: center;
+      margin: 0;
+    }
+  }
+  &.two {
+    background: #38D1F1;
+  }
+  &.three {
+    background: #316671;
+  }
+  &.four {
+    background: #A43562;
+  }
+}
+
+#about-content {
+  text-align: center;
+  max-width: 760px;
+  margin: auto;
+  img {
+    width: 80%;
+    border-radius: 15px;
+  }
+  p {
+    text-align: left;
+  }
+}
+
+.two-column-container {
+  width: 80%;
+  max-width: 900px;
+  height: 800px;
+  margin: 0 auto;
+  .left-column {
+    float: left;
+  }
+  .right-column {
+    float: right;
+  }
+  div div {
+    width: 22em;
+    height: 22em;
+    background-color: rgba(0, 0, 0, .2);
+    border-radius: 20px;
+    margin: 20px 20px;
+    padding: 10px 10px;
+  }
+}
+
+@media (max-width: 64em) {
+  .two-column-container {
+    width: 95%
+  }
+}
+
+@media (max-width: 46em) {
+  #social-icons {
+    display: none;
+  }
+}
+@media (max-width: 40em) {
+  #about-content img {
+    width: 100%;
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+  }
+  section {
+    &.one {
+      h1 {
+        display: none;
+      }
+    }
+    margin: 0;
+    padding: 40px 0px;
+  }
+  .main-navigation {
+    position: relative;
+    min-height: 40px;
+    span {
+      margin-top: 5px;
+    }
+    #section-links {
+      margin: 0 4px;
+      width: 30px;
+      padding: 5px 1px 6px;
+      position: absolute;
+      left: auto;
+      right: 0;
+      border: solid 1px #aaa;
+      background: #fff url(http://webdesignerwall.com/demo/responsive-menu/images/icon-menu.png) no-repeat 10px 10px;
+      border-radius: 5px;
+    }
+    li {
+      display: none; /* hide all <li> items */
+      margin: 0;
+    }
+    a {
+      display: none;
+    }
+    #social-icons {
+      display: none;
+    }
+    #section-links:hover {
+      background-image: none;
+      width: 180px;
+      a {
+        display: block;
+      }
+      li {
+        display: block;
+        margin: 0 0 5px;
+      }
+    }
+  }
+}
