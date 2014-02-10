@@ -60,7 +60,7 @@ section {
   &.one {
     background: #583B47;
     h1 {
-      font-size: 45px;
+      font-size: 3em;
       text-align: center;
       margin: 0;
     }
@@ -78,11 +78,11 @@ section {
 
 #about-content {
   text-align: center;
-  max-width: 760px;
+  max-width: 740px;
   margin: auto;
   img {
     width: 80%;
-    border-radius: 15px;
+    border-radius: 10px;
   }
   p {
     text-align: left;
@@ -92,7 +92,7 @@ section {
 .two-column-container {
   width: 80%;
   max-width: 900px;
-  height: 800px;
+  height: 900px;
   margin: 0 auto;
   .left-column {
     float: left;
@@ -102,17 +102,37 @@ section {
   }
   div div {
     width: 22em;
-    height: 22em;
-    background-color: rgba(0, 0, 0, .2);
+    height: 26em;
+    background-color: rgba(0, 0, 0, .4);
     border-radius: 20px;
     margin: 20px 20px;
     padding: 10px 10px;
+    img {
+      width: 21em;
+      padding: .5em 0 0 .5em;
+    }
   }
 }
 
-@media (max-width: 64em) {
+@media (max-width: 67em) {
   .two-column-container {
-    width: 95%
+    width: 95%;
+  }
+}
+
+@media (max-width: 900px) {
+  .two-column-container {
+    height: 1800px;
+    .left-column {
+      float: none;
+    }
+    .right-column {
+      float: none;
+    }
+    div div {
+      margin: 4px auto;
+
+    }
   }
 }
 
@@ -136,6 +156,9 @@ section {
     }
     margin: 0;
     padding: 40px 0px;
+    p {
+      padding: 0 4px;
+    }
   }
   .main-navigation {
     position: relative;

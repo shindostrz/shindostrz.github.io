@@ -50,7 +50,7 @@ section {
   section.one {
     background: #583B47; }
     section.one h1 {
-      font-size: 45px;
+      font-size: 3em;
       text-align: center;
       margin: 0; }
   section.two {
@@ -62,18 +62,18 @@ section {
 
 #about-content {
   text-align: center;
-  max-width: 760px;
+  max-width: 740px;
   margin: auto; }
   #about-content img {
     width: 80%;
-    border-radius: 15px; }
+    border-radius: 10px; }
   #about-content p {
     text-align: left; }
 
 .two-column-container {
   width: 80%;
   max-width: 900px;
-  height: 800px;
+  height: 900px;
   margin: 0 auto; }
   .two-column-container .left-column {
     float: left; }
@@ -81,15 +81,27 @@ section {
     float: right; }
   .two-column-container div div {
     width: 22em;
-    height: 22em;
-    background-color: rgba(0, 0, 0, 0.2);
+    height: 26em;
+    background-color: rgba(0, 0, 0, 0.4);
     border-radius: 20px;
     margin: 20px 20px;
     padding: 10px 10px; }
+    .two-column-container div div img {
+      width: 21em;
+      padding: .5em 0 0 .5em; }
 
-@media (max-width: 64em) {
+@media (max-width: 67em) {
   .two-column-container {
     width: 95%; } }
+@media (max-width: 900px) {
+  .two-column-container {
+    height: 1800px; }
+    .two-column-container .left-column {
+      float: none; }
+    .two-column-container .right-column {
+      float: none; }
+    .two-column-container div div {
+      margin: 4px auto; } }
 @media (max-width: 46em) {
   #social-icons {
     display: none; } }
@@ -105,6 +117,8 @@ section {
     padding: 40px 0px; }
     section.one h1 {
       display: none; }
+    section p {
+      padding: 0 4px; }
 
   .main-navigation {
     position: relative;
