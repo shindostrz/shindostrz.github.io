@@ -19,7 +19,8 @@ header {
   margin-top: 0.4em; }
 .main-navigation #links {
   float: right;
-  display: inline-flex; }
+  display: -webkit-box;
+  display: flex; }
 .main-navigation #section-links {
   list-style-type: none;
   text-align: right;

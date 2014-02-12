@@ -22,7 +22,8 @@ header {
   }
   #links {
     float: right;
-    display: inline-flex;
+    display: -webkit-box;
+    display: flex;
   }
   #section-links {
     list-style-type: none;
