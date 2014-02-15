@@ -102,15 +102,21 @@ section {
     float: right;
   }
   div div {
-    width: 22em;
-    height: 27em;
-    background-color: rgba(0, 0, 0, .4);
+    width: 352px;
+    height: 420px;
+    background-color: #316671;
     border-radius: 20px;
     margin: 20px 20px;
     padding: 10px 10px;
     img {
       width: 21em;
       padding: .5em .5em;
+    }
+    h3 {
+      margin-top: .2em;
+    }
+    a {
+      text-decoration: none;
     }
   }
 }
@@ -146,7 +152,6 @@ section {
     }
     div div {
       margin: 4px auto;
-
     }
   }
 }
@@ -217,8 +222,10 @@ section {
 }
 @media (max-width: 400px) {
   .two-column-container {
+    height: 1720px;
     width: 100%;
     div div {
+    height: 400px;
     width: 300px;
     img {
       width: 285px;

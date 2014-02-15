@@ -81,15 +81,19 @@ section {
   .two-column-container .right-column {
     float: right; }
   .two-column-container div div {
-    width: 22em;
-    height: 27em;
-    background-color: rgba(0, 0, 0, 0.4);
+    width: 352px;
+    height: 420px;
+    background-color: #316671;
     border-radius: 20px;
     margin: 20px 20px;
     padding: 10px 10px; }
     .two-column-container div div img {
       width: 21em;
       padding: .5em .5em; }
+    .two-column-container div div h3 {
+      margin-top: .2em; }
+    .two-column-container div div a {
+      text-decoration: none; }
 
 #resume-education {
   float: left; }
@@ -167,8 +171,10 @@ section {
         margin: 0 0 5px; } }
 @media (max-width: 400px) {
   .two-column-container {
+    height: 1720px;
     width: 100%; }
     .two-column-container div div {
+      height: 400px;
       width: 300px; }
       .two-column-container div div img {
         width: 285px; } }
