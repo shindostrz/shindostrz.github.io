@@ -16,7 +16,7 @@ header {
   font-weight: bold;
   font-size: 1.5em;
   color: #fff;
-  margin-top: 0.4em; }
+  margin: 0.4em 0.2em; }
 .main-navigation #links {
   float: right;
   display: -webkit-box;
