@@ -89,7 +89,7 @@ section {
     padding: 10px 10px; }
     .two-column-container div div img {
       width: 21em;
-      padding: .5em 0 0 .5em; }
+      padding: .5em .5em; }
 
 #resume-education {
   float: left; }
@@ -104,7 +104,7 @@ section {
 #resume-interests {
   text-align: center; }
 
-@media (max-width: 67em) {
+@media (max-width: 1072px) {
   .two-column-container {
     width: 95%; } }
 @media (max-width: 900px) {
@@ -116,10 +116,10 @@ section {
       float: none; }
     .two-column-container div div {
       margin: 4px auto; } }
-@media (max-width: 46em) {
+@media (max-width: 784px) {
   #social-icons {
     display: none; } }
-@media (max-width: 40em) {
+@media (max-width: 640px) {
   #about-content img {
     width: 100%;
     border-radius: 0;
@@ -165,3 +165,10 @@ section {
       .main-navigation #section-links:hover li {
         display: block;
         margin: 0 0 5px; } }
+@media (max-width: 400px) {
+  .two-column-container {
+    width: 100%; }
+    .two-column-container div div {
+      width: 300px; }
+      .two-column-container div div img {
+        width: 285px; } }
