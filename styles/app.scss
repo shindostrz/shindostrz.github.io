@@ -115,6 +115,20 @@ section {
   }
 }
 
+#resume-education {
+  float: left;
+}
+#resume-skills {
+  float:right;
+  text-align: right;
+}
+#resume-experience {
+  clear: both;
+}
+#resume-interests {
+  text-align: center;
+}
+
 @media (max-width: 67em) {
   .two-column-container {
     width: 95%;
