@@ -74,7 +74,7 @@ section {
 .two-column-container {
   width: 80%;
   max-width: 900px;
-  height: 900px;
+  height: 940px;
   margin: 0 auto; }
   .two-column-container .left-column {
     float: left; }
@@ -82,7 +82,7 @@ section {
     float: right; }
   .two-column-container div div {
     width: 22em;
-    height: 26em;
+    height: 27em;
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 20px;
     margin: 20px 20px;
@@ -109,7 +109,7 @@ section {
     width: 95%; } }
 @media (max-width: 900px) {
   .two-column-container {
-    height: 1800px; }
+    height: 1820px; }
     .two-column-container .left-column {
       float: none; }
     .two-column-container .right-column {
