@@ -120,6 +120,10 @@ section {
     }
   }
 }
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
 
 #resume-education {
   float: left;
@@ -174,6 +178,9 @@ section {
 @media (max-width: 784px) {
   #social-icons {
     display: none;
+  }
+  .container {
+    width: 98%;
   }
 }
 @media (max-width: 640px) {
