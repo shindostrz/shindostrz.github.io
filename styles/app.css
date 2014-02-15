@@ -112,11 +112,6 @@ section {
 #resume-interests {
   text-align: center; }
 
-#tweets {
-  width: 400px;
-  text-align: center;
-  margin: auto; }
-
 #contact {
   text-align: center; }
   #contact img {
@@ -200,7 +195,4 @@ section {
         width: 285px; }
 
   #contact img {
-    width: 6em; }
-
-  #tweets {
-    width: 18em; } }
+    width: 6em; } }
