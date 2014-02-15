@@ -108,6 +108,19 @@ section {
 #resume-interests {
   text-align: center; }
 
+#tweets {
+  width: 400px;
+  text-align: center;
+  margin: auto; }
+
+#contact {
+  text-align: center; }
+  #contact img {
+    width: 8em; }
+
+#footer {
+  clear: both; }
+
 @media (max-width: 1072px) {
   .two-column-container {
     width: 95%; } }
@@ -177,4 +190,10 @@ section {
       height: 400px;
       width: 300px; }
       .two-column-container div div img {
-        width: 285px; } }
+        width: 285px; }
+
+  #contact img {
+    width: 6em; }
+
+  #tweets {
+    width: 18em; } }
