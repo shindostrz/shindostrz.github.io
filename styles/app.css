@@ -30,13 +30,13 @@ header {
     display: inline-block; }
     .main-navigation #section-links li a {
       padding: 0.25em 0.5em;
-      background: #B1A530;
+      background: #669C41;
       text-decoration: none;
       text-transform: uppercase;
       color: #fff;
       border-radius: 3px; }
       .main-navigation #section-links li a:hover {
-        background: #9d922b; }
+        background: #5a8a39; }
 .main-navigation #social-icons {
   margin: .4em .4em 0 -3em;
   list-style-type: none; }
