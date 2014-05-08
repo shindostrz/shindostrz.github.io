@@ -217,7 +217,8 @@ section {
     height: 1220px;
     width: 100%; }
     .two-column-container .project {
-      width: 100%; }
+      width: 100%;
+      overflow: hidden; }
       .two-column-container .project img {
         border-radius: 0; }
       .two-column-container .project .description {
