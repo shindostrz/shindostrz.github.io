@@ -145,17 +145,17 @@ section {
 #footer {
   clear: both; }
 
-@media (max-width: 1072px) {
+@media (max-width: 1246px) {
   .two-column-container {
     width: 95%; } }
-@media (max-width: 900px) {
+@media (max-width: 1055px) {
   .two-column-container {
-    height: 1820px; }
+    height: 1220px; }
     .two-column-container .left-column {
       float: none; }
     .two-column-container .right-column {
       float: none; }
-    .two-column-container div div {
+    .two-column-container .project {
       margin: 4px auto; } }
 @media (max-width: 784px) {
   #social-icons {

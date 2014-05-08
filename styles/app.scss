@@ -93,7 +93,7 @@ section {
 .two-column-container {
   width: 80%;
   max-width: 900px;
-  height: 940px;
+  height: 800px;
   margin: 0 auto;
   .left-column {
     float: left;
@@ -177,22 +177,22 @@ section {
   clear:both;
 }
 
-@media (max-width: 1072px) {
+@media (max-width: 1246px) {
   .two-column-container {
     width: 95%;
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1055px) {
   .two-column-container {
-    height: 1820px;
+    height: 1220px;
     .left-column {
       float: none;
     }
     .right-column {
       float: none;
     }
-    div div {
+    .project {
       margin: 4px auto;
     }
   }
@@ -270,18 +270,20 @@ section {
 }
 @media (max-width: 400px) {
   .two-column-container {
-    height: 1720px;
+    height: 1220px;
     width: 100%;
-    div div {
-    height: 400px;
-    width: 300px;
+    .project {
+    width: 100%;
       img {
-        width: 285px;
+        border-radius: 0;
+      }
+      .description {
+        border-radius: 0;
+        width: 100%;
       }
     }
   }
   #contact img {
     width: 6em;
   }
-
 }
