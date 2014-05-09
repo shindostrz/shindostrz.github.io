@@ -222,11 +222,13 @@ section {
     .two-column-container .project {
       width: 100%;
       overflow: hidden; }
-      .two-column-container .project img {
+      .two-column-container .project .image img {
+        width: 100%;
         border-radius: 0; }
       .two-column-container .project .description {
         border-radius: 0;
-        width: 100%; }
+        width: 100%;
+        padding: 0; }
 
   #contact img {
     width: 6em; } }
