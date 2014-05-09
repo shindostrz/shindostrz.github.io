@@ -91,9 +91,6 @@ section {
       -webkit-opacity: 1;
       -moz-opacity: 1;
       opacity: 1; }
-    .two-column-container .project img {
-      width: 400px;
-      border-radius: 15px; }
     .two-column-container .project h3 {
       margin-top: .2em; }
     .two-column-container .project a {
@@ -101,6 +98,9 @@ section {
       color: #38D1F1; }
   .two-column-container .image {
     position: absolute; }
+    .two-column-container .image img {
+      width: 400px;
+      border-radius: 15px; }
   .two-column-container .description {
     position: absolute;
     top: 0;
@@ -118,6 +118,9 @@ section {
     -ms-transition: all 1s ease;
     -o-transition: all 1s ease;
     transition: all 1s ease; }
+    .two-column-container .description span {
+      position: inherit;
+      margin-top: 8px; }
 
 .container {
   width: 85%;

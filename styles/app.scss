@@ -113,10 +113,6 @@ section {
       -moz-opacity: 1;
       opacity: 1;
     }
-    img {
-      width: 400px;
-      border-radius: 15px
-    }
     h3 {
       margin-top: .2em;
     }
@@ -127,6 +123,10 @@ section {
   }
   .image {
     position: absolute;
+    img {
+      width: 400px;
+      border-radius: 15px
+    }
   }
   .description {
     position: absolute;
@@ -145,6 +145,10 @@ section {
     -ms-transition: all 1s ease;
     -o-transition: all 1s ease;
     transition: all 1s ease;
+    span {
+      position: inherit;
+      margin-top: 8px;
+    }
   }
 }
 .container {
