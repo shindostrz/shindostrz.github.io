@@ -148,7 +148,7 @@ section {
 @media (max-width: 1246px) {
   .two-column-container {
     width: 95%; } }
-@media (max-width: 1055px) {
+@media (max-width: 960px) {
   .two-column-container {
     height: 1220px; }
     .two-column-container .left-column {
