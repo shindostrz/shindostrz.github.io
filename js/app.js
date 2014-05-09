@@ -13,4 +13,10 @@ $(document).ready(function(){
       }
     }
   });
+  $(window).resize(function() {
+    if ($(".image img").css("width") == $(window).width().toString() + "px") {
+      $(".description").height($(".image img").height());
+      console.log("resized");
+    }
+  });
 });
