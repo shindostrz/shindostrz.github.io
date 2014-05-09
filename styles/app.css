@@ -228,7 +228,7 @@ section {
       .two-column-container .project .description {
         border-radius: 0;
         width: 100%;
-        padding: 0; }
+        padding: 10px 5px 0px 10px; }
 
   #contact img {
     width: 6em; } }
