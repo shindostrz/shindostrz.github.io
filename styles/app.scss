@@ -6,26 +6,28 @@ html, body {
   padding: 0;
   font-family: 'Actor', sans-serif;
 }
+
 header {
   position: fixed;
   width: 100%;
   background: #424244;
   z-index: 99;
 }
+
 .main-navigation {
   #name {
     float: left;
     font-weight: bold;
     font-size: 1.5em;
     color: #fff;
-    margin: .4em .2em
+    margin: 0.4em 0.2em;
   }
   #links {
     float: right;
     display: -webkit-box;
     display: flex;
   }
-  #section-links {
+  .section-links {
     list-style-type: none;
     text-align: right;
     padding: 0;
@@ -40,19 +42,20 @@ header {
         color: #fff;
         border-radius: 3px;
         &:hover {
-          background: darken(#669C41, 5%);
+          background: #5a8a39;
         }
       }
     }
   }
   #social-icons {
-    margin: .4em .4em 0 -3em;
+    margin: 0.4em 0.4em 0 -3em;
     list-style-type: none;
     li {
       display: inline-block;
     }
   }
 }
+
 section {
   min-height: 100%;
   position: relative;
@@ -108,7 +111,7 @@ section {
     margin: 20px;
     z-index: 1;
     &:hover .description {
-      background-color: rgba(0, 0, 0, .5);
+      background-color: rgba(0, 0, 0, 0.5);
       -webkit-opacity: 1;
       -moz-opacity: 1;
       opacity: 1;
@@ -125,7 +128,7 @@ section {
     position: absolute;
     img {
       width: 400px;
-      border-radius: 15px
+      border-radius: 15px;
     }
   }
   .description {
@@ -151,6 +154,7 @@ section {
     }
   }
 }
+
 .container {
   width: 85%;
   margin: 0 auto;
@@ -159,13 +163,16 @@ section {
 #resume-education {
   float: left;
 }
+
 #resume-skills {
-  float:right;
+  float: right;
   text-align: right;
 }
+
 #resume-experience {
   clear: both;
 }
+
 #resume-interests {
   text-align: center;
 }
@@ -177,8 +184,55 @@ section {
     width: 8em;
   }
 }
+
 #footer {
-  clear:both;
+  clear: both;
+}
+
+.menu-display {
+  text-align: right;
+  padding: 0;
+  width: 160px;
+  ul {
+    position: absolute;
+  }
+  li {
+    width: 160px;
+    display: block;
+    margin: 0 0 5px;
+    a {
+      display: block;
+      padding: 0.25em 0.5em;
+      background: #669C41;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #fff;
+      border-radius: 3px;
+      &:hover {
+        background: #5a8a39;
+      }
+    }
+  }
+}
+
+.menu-button {
+  margin: 0 4px;
+  width: 30px;
+  height: 22px;
+  padding: 5px 1px 6px;
+  left: auto;
+  right: 0;
+  border: solid 1px #aaa;
+  background: white url(http://webdesignerwall.com/demo/responsive-menu/images/icon-menu.png) no-repeat 10px 10px;
+  border-radius: 5px;
+  li {
+    display: none;
+    /* hide all <li> items */
+    margin: 0;
+  }
+  a {
+    display: none;
+  }
 }
 
 @media (max-width: 1246px) {
@@ -190,10 +244,7 @@ section {
 @media (max-width: 960px) {
   .two-column-container {
     height: 1220px;
-    .left-column {
-      float: none;
-    }
-    .right-column {
+    .left-column, .right-column {
       float: none;
     }
     .project {
@@ -210,6 +261,7 @@ section {
     width: 98%;
   }
 }
+
 @media (max-width: 640px) {
   #about-content img {
     width: 100%;
@@ -218,13 +270,11 @@ section {
     margin: 0;
   }
   section {
-    &.one {
-      h1 {
-        display: none;
-      }
-    }
     margin: 0;
     padding: 40px 0px;
+    &.one h1 {
+      display: none;
+    }
     p {
       padding: 0 15px 0 0;
     }
@@ -235,43 +285,15 @@ section {
     span {
       margin-top: 5px;
     }
-    #section-links {
-      margin: 0 4px;
-      width: 30px;
-      padding: 5px 1px 6px;
-      position: absolute;
-      left: auto;
-      right: 0;
-      border: solid 1px #aaa;
-      background: #fff url(http://webdesignerwall.com/demo/responsive-menu/images/icon-menu.png) no-repeat 10px 10px;
-      border-radius: 5px;
-    }
-    li {
-      display: none; /* hide all <li> items */
-      margin: 0;
-    }
-    a {
-      display: none;
-    }
     #social-icons {
       display: none;
-    }
-    #section-links:hover {
-      background-image: none;
-      width: 180px;
-      a {
-        display: block;
-      }
-      li {
-        display: block;
-        margin: 0 0 5px;
-      }
     }
   }
   #contact img {
     margin: 0;
   }
 }
+
 @media (max-width: 400px) {
   .two-column-container {
     height: 1220px;

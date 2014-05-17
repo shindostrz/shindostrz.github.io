@@ -21,24 +21,24 @@ header {
   float: right;
   display: -webkit-box;
   display: flex; }
-.main-navigation #section-links {
+.main-navigation .section-links {
   list-style-type: none;
   text-align: right;
   padding: 0;
   margin: 0.8em 1em; }
-  .main-navigation #section-links li {
+  .main-navigation .section-links li {
     display: inline-block; }
-    .main-navigation #section-links li a {
+    .main-navigation .section-links li a {
       padding: 0.25em 0.5em;
       background: #669C41;
       text-decoration: none;
       text-transform: uppercase;
       color: #fff;
       border-radius: 3px; }
-      .main-navigation #section-links li a:hover {
+      .main-navigation .section-links li a:hover {
         background: #5a8a39; }
 .main-navigation #social-icons {
-  margin: .4em .4em 0 -3em;
+  margin: 0.4em 0.4em 0 -3em;
   list-style-type: none; }
   .main-navigation #social-icons li {
     display: inline-block; }
@@ -148,15 +148,51 @@ section {
 #footer {
   clear: both; }
 
+.menu-display {
+  text-align: right;
+  padding: 0;
+  width: 160px; }
+  .menu-display ul {
+    position: absolute; }
+  .menu-display li {
+    width: 160px;
+    display: block;
+    margin: 0 0 5px; }
+    .menu-display li a {
+      display: block;
+      padding: 0.25em 0.5em;
+      background: #669C41;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #fff;
+      border-radius: 3px; }
+      .menu-display li a:hover {
+        background: #5a8a39; }
+
+.menu-button {
+  margin: 0 4px;
+  width: 30px;
+  height: 22px;
+  padding: 5px 1px 6px;
+  left: auto;
+  right: 0;
+  border: solid 1px #aaa;
+  background: white url(http://webdesignerwall.com/demo/responsive-menu/images/icon-menu.png) no-repeat 10px 10px;
+  border-radius: 5px; }
+  .menu-button li {
+    display: none;
+    /* hide all <li> items */
+    margin: 0; }
+  .menu-button a {
+    display: none; }
+
 @media (max-width: 1246px) {
   .two-column-container {
     width: 95%; } }
 @media (max-width: 960px) {
   .two-column-container {
     height: 1220px; }
-    .two-column-container .left-column {
-      float: none; }
-    .two-column-container .right-column {
+    .two-column-container .left-column, .two-column-container .right-column {
       float: none; }
     .two-column-container .project {
       margin: 4px auto; } }
@@ -186,32 +222,8 @@ section {
     min-height: 40px; }
     .main-navigation span {
       margin-top: 5px; }
-    .main-navigation #section-links {
-      margin: 0 4px;
-      width: 30px;
-      padding: 5px 1px 6px;
-      position: absolute;
-      left: auto;
-      right: 0;
-      border: solid 1px #aaa;
-      background: white url(http://webdesignerwall.com/demo/responsive-menu/images/icon-menu.png) no-repeat 10px 10px;
-      border-radius: 5px; }
-    .main-navigation li {
-      display: none;
-      /* hide all <li> items */
-      margin: 0; }
-    .main-navigation a {
-      display: none; }
     .main-navigation #social-icons {
       display: none; }
-    .main-navigation #section-links:hover {
-      background-image: none;
-      width: 180px; }
-      .main-navigation #section-links:hover a {
-        display: block; }
-      .main-navigation #section-links:hover li {
-        display: block;
-        margin: 0 0 5px; }
 
   #contact img {
     margin: 0; } }
